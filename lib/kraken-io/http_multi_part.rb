@@ -13,7 +13,7 @@ module HTTPMultiPart
       body: params[:body] })
 
     https = Net::HTTP.new(url.host, url.port)
-    https.use_ssl = true
+#   https.use_ssl = true
     https.request(req)
   end
 end
